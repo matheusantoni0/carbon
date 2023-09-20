@@ -1,0 +1,76 @@
+{
+  "hidefiles.configurationType": "local",
+  "hidefiles.globalConfig": {
+    "profiles": [
+      {
+        "name": "Default",
+        "detail": "",
+        "description": "Test",
+        "hidden": [
+          ".vscode/",
+          ".editorconfig",
+          ".env.example",
+          ".eslintrc.json",
+          ".gitignore",
+          ".prettierrc",
+          "jest.config.json",
+          "Makefile",
+          "package.json",
+          "tsconfig.json",
+          ".husky/",
+          "node_modules/"
+        ]
+      },
+      {
+        "name": "Strict",
+        "detail": "Hide everything not immediately required",
+        "hidden": [
+          "$Default",
+          "node_modules/",
+          "yarn.lock",
+          ".editorconfig",
+          ".env.example",
+          ".eslintignore",
+          ".eslintrc.json",
+          ".gitignore",
+          ".prettierrc",
+          "jest.config.json",
+          "knexfile.js",
+          "Makefile",
+          "package.json",
+          "tsconfig.json",
+          ".husky/"
+        ]
+      },
+      {
+        "hidden": [
+          "$Strict",
+          "src/modules/meal/utensil/infrastructure/objections/models/utensil-model.ts",
+          "src/configs/",
+          "src/libs/",
+          "src/utils/",
+          "src/di-container.ts",
+          "src/index.ts",
+          "src/modules/@application/",
+          "src/modules/@common/",
+          "src/modules/auth/",
+          ".dev/",
+          "src/__tests__/configs/",
+          "src/__tests__/utils/"
+        ],
+        "name": "Just Modules",
+        "description": "",
+        "detail": "",
+        "peek": []
+      }
+    ]
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "hidefiles.selectedProfile": "Show All Files"
+}

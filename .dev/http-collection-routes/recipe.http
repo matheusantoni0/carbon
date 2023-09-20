@@ -1,0 +1,23 @@
+@url = http://localhost:3003
+
+#### create-ingredient-controller.ts
+POST {{url}}/meal/ingredient HTTP/1.1
+Content-Type: application/json
+{
+  "name": "asd",
+  "recipeIngredients": [{
+    "ingredientId": "",
+    "amount": 100,
+    "measurement": "g",
+    "cut": "rod",
+    "cutSize": "small"
+  }],
+  "amount": 100,
+  "measurement": "g",
+}
+
+### get-ingredient-by-id-controller.ts
+GET {{url}}/meal/ingredient/9ae03006-1a81-4b68-9d56-26d4e52b9165
+
+### list-all-ingredients-controller.ts
+GET {{url}}/meal/ingredient

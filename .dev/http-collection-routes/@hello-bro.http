@@ -1,0 +1,4 @@
+@url = http://localhost:3003
+
+### Hello Bro!
+GET {{url}}

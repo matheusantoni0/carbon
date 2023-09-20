@@ -1,0 +1,23 @@
+{
+  "coverageDirectory": "<rootDir>/.dev/test-coverage",
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "/src/__tests__/"
+  ],
+  "moduleNameMapper": {
+    "^!tests/(.*)$": "<rootDir>/src/__tests__/$1",
+    "^#/(.*)$": "<rootDir>/src/$1"
+  },
+  "preset": "ts-jest",
+  "setupFiles": [
+    "<rootDir>/src/__tests__/configs/setup.ts"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/__tests__/configs/setup-after-env.ts"
+  ],
+  "testEnvironment": "node",
+  "testMatch": [
+    "<rootDir>/src/__tests__/**/*.spec.ts"
+  ],
+  "testTimeout": 30000
+}

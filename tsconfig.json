@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "lib": [
+      "es2019",
+      "es2020.promise",
+      "es2020.bigint",
+      "es2020.string"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "paths": {
+      "!tests/*": ["src/__tests__/*"],
+      "#/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "migrations",
+    ".dev"
+  ],
+
+}

@@ -1,0 +1,47 @@
+@url = http://localhost:3003
+
+#### create-ingredient-controller.ts
+POST {{url}}/meal/ingredient HTTP/1.1
+Content-Type: application/json
+{
+  "name": "asd",
+  "category": "fat",
+  "nutritionalValue": {
+    "calories": 56322,
+    "saturatedFat": 2259,
+    "monounsaturatedFat": 25099,
+    "polyunsaturatedFat": 61280,
+    "carbohydrate": 19414,
+    "protein": 16682,
+    "fiberFeed": 34176,
+    "cholesterol": 52789,
+    "vitaminA": 39098,
+    "vitaminB": 83805,
+    "vitaminB1": 10373,
+    "vitaminB12": 60505,
+    "vitaminB2": 28727,
+    "vitaminB3": 57849,
+    "vitaminB5": 23032,
+    "vitaminB6": 78887,
+    "vitaminC": 5158,
+    "vitaminD": 79013,
+    "vitaminE": 26416,
+    "vitaminK": 81631,
+    "calcium": 7931,
+    "copper": 19177,
+    "iron": 73276,
+    "magnesium": 47843,
+    "manganese": 97271,
+    "phosphor": 82258,
+    "potassium": 61629,
+    "sodium": 29869,
+    "selenium": 27851,
+    "zinc": 17528
+  }
+}
+
+### get-ingredient-by-id-controller.ts
+GET {{url}}/meal/ingredient/9ae03006-1a81-4b68-9d56-26d4e52b9165
+
+### list-all-ingredients-controller.ts
+GET {{url}}/meal/ingredient
